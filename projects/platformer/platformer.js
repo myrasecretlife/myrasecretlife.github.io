@@ -42,11 +42,12 @@ $(function () {
     createPlatform(0,700,100,8)
     createPlatform(40,700,8,100)
     createPlatform(170,590,100,8)
-    createPlatform(215,598,8,142)
-    createPlatform(400,500,100,8)
-    createPlatform(600,300,100,8)
-    createPlatform(450,600,8,900)
-    createPlatform(800,400,100,8)
+    createPlatform(215,598,8,1300)
+    createPlatform(400,500,110,8)
+    createPlatform(600,400,100,8)
+    createPlatform(450,500,8,1300)
+    createPlatform(450,500,8,1300)
+    createPlatform(900,300,100,8)
     createPlatform(1000,200,100,8)
     
     
