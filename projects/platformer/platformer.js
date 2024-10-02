@@ -20,6 +20,7 @@ $(function () {
     createPlatform(-50, canvas.height - 10, canvas.width + 100, 200); //right
     createPlatform(-50, -50, 50, canvas.height + 500); //bottom
     createPlatform(canvas.width, -50, 50, canvas.height + 100);
+    createPlatform(canvas.width, -50, 100, canvas.height + 50);
 
     /**
      * Uncomment the drawGrid() function call below to add a "grid" to your platformer game's screen
@@ -40,20 +41,13 @@ $(function () {
     // example usage: createPlatform(x,y,width,height)
      
     createPlatform(0,700,100,8)
-    createPlatform(40,700,8,100)
-    createPlatform(170,590,100,8)
-    createPlatform(215,598,8,1300)
-    createPlatform(400,500,110,8)
-    createPlatform(600,400,100,8)
-    createPlatform(450,500,8,1300)
-    createPlatform(450,500,8,1300)
-    createPlatform(900,300,100,8)
+    createPlatform(130,570,100,8) 
+    createPlatform(300,440,100,8)
+    createPlatform(500,320,100,8)
+    createPlatform(700,200,100,8)
     createPlatform(1000,200,100,8)
-    
-    
-
-
-    
+    createPlatform(1300,700,100,8)
+    createPlatform(1200,400,300,8)
     // TODO 2
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
@@ -68,6 +62,7 @@ $(function () {
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
+    createCannon("left",889,600,20,30)
 
 
 
