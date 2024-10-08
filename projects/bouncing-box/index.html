@@ -7,9 +7,10 @@
 	<script src="jquery.min.js"></script>
 	<style>
 		.box {
-			width: 70px;
-			height: 70px;
-			background-color: teal;
+			width: 90px;
+			height: 90px;
+			background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsGNVDzoncadd0jfWZIx1i1bk0CiJLnAnXtw&s");
+			background-size:100%;
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
@@ -84,8 +85,13 @@
 				positionX = positionX + speed;
 				moveBoxTo(positionX);
 				if (positionX > boardWidth){
+					// change direction of the box
 					speed = speed * -1;
 				}
+
+				if(positionX < 0){
+				// change speed to be positive
+				speed = speed * -1;				}
 			};
 
 			/* 
@@ -96,7 +102,7 @@
 			function handleBoxClick() {
               positionX = 0;
               points = points + 1;
-			  speed = points + 3
+			  speed = speed + 3;
 			  changeBoxText(points);
 			};
 
